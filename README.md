@@ -1,2 +1,1 @@
-requests
-httpagentparser
+idk what im doing okay..?
